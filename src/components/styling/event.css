@@ -1,0 +1,53 @@
+.Event {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: none;
+  }
+  
+  /* Container holding the image and the text */
+  .EventModule {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: auto;
+    display: inherit;
+  }
+  
+  .EventModule img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Bottom left text */
+  .EventModule .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .EventModule .bottom-left h3 {
+    text-align: left;
+    margin:0px;
+    font-weight: normal;
+  }
+  
+  .EventModule .bottom-left p {
+    text-align: left;
+    margin:0px;
+  }
+  
+  /* Bottom right text */
+  .EventModule .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .EventModule .bottom-right img {
+    width: 60px;
+  }

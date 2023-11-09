@@ -1,0 +1,88 @@
+/* CSS for BottomNavigation component */
+.bottom-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1C232A;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  height: 100px
+}
+
+.nav-item {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #0000;
+  border-style: none;
+  /* Adjust the font size as needed */
+}
+
+.nav-item:hover {
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+/* CSS for UpperNavigation component */
+.upper-navigation {
+  display: inline-flex;
+  align-items: center;
+  color: #F0F0F0;
+  background-color: #1C232A;
+  padding: 20px 0px 15px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  left: 0px;
+  z-index: 1;
+
+}
+
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #F0F0F0;
+  border-radius: 20px;
+  color: #F0F0F0;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: flex;
+}
+
+.nav-button.active {
+  background-color: #1C232A;
+  border-width: 0px;
+}
+
+.nav-button:hover {
+  background-color: #1C232A;
+}
+
+.Correction {
+  margin: 75px 0px 120px 0px;
+}
+
+.FullWidth {
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  background-color: #1C232A;
+  font-family: Merriweater Sans;
+}

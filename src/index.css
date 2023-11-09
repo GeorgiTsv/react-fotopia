@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family:Merriweater-Sans
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* CSS for EventCard component */
+.event-card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.event-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+strong {
+  color: #ffcc00;
+}
+
+.read-more-button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #ffa500;
+}
+/* CSS for Blog and Tutorial components */
+.blog,
+.tutorial {
+position: relative;
+width: 300px;
+height: 300px;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+margin: 10px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.blog {
+background-color: rgba(255, 0, 0, 0.6); /* Example background color for blogs */
+}
+
+.tutorial {
+background-color: rgba(0, 0, 255, 0.6); /* Example background color for tutorials */
+}
+
+.blog h2,
+.tutorial h2 {
+font-size: 1.2rem;
+margin: 10px;
+}
+
+.blog p,
+.tutorial p {
+margin: 10px;
+font-size: 0.9rem;
+}
+
+.category-tag {
+background-color: #333;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+margin: 10px;
+}
+
+.read-more-button {
+background-color: #ffcc00;
+color: #333;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+border-radius: 5px;
+margin: 10px;
+}
+
+.read-more-button i {
+margin-left: 5px;
+}
+
+.read-more-button:hover {
+background-color: #ffa500;
+}
+
+/* CSS for FeedItem component */
+.feed-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feed-photo {
+  width: 100%;
+  max-height: 400px; /* Adjust the max height as needed */
+  object-fit: cover;
+}
+
+.feed-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.feed-name {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+
+.like-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.like-button.liked {
+  color: #ff0000; /* Change the color when liked */
+}
+
+.fa-heart:before {
+  content: "\f004"; /* Unicode for a heart icon from Font Awesome */
+}
+
+.fa-heart {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+/* CSS for BottomNavigation component */
+.bottom-navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-item {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.nav-item:hover {
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+/* CSS for UpperNavigation component */
+.upper-navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.nav-button.active {
+  background-color: #000;
+}
+
+.nav-button:hover {
+  background-color: #000;
+}
+
+
+/* CSS for Header component */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.custom-logo {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.custom-picture {
+  width: 50px; /* Adjust the width as needed */
+  border-radius: 50%; /* Make it round for a profile picture effect */
+}
+  
